@@ -1,0 +1,167 @@
+
+
+* {
+    font-family: Lato, sans-serif;
+    margin: 0 auto;
+}
+
+.container-centered {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:white;
+    text-align: center;
+    z-index:1;
+}
+
+nav li {
+    display: inline;
+    float: left;
+   
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #D66DBC;
+    
+}
+
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover{
+    background-color: #a982ef;
+}
+
+.pic {
+    width: 100%;
+}
+.pic img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.pic h2 {
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:rgb(255, 255, 255);
+    background-color: #f97df596;
+   font-family: Lato, sans-serif;
+    font-size:1.8em;
+    width:300px; 
+    text-align:center;
+    padding:4%;
+  }
+
+.specialities {
+    display: flex; /* Flexbox kullanarak içerikleri hizalamak için */
+    justify-content: space-around; /* İçerikler arasında boşluk bırakarak hizalama sağlıyoruz */
+    margin: 10px;
+
+}
+
+
+.inline-block{
+    display: inline-block;
+    max-width: 20%;
+    padding: 5px; /* Resimler arasındaki boşluk */
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20%; /* Oval şekil vermek için */
+    overflow: hidden; /* Oval şekilde kırpma */
+} 
+
+@media screen and (max-width:600px) {
+    .inline-block {
+      width: 100%;
+    }
+}
+
+h3{
+    text-align:center;
+    color:#D66DBC;
+    font-size:2em;
+    padding-top:50px;
+    padding-bottom:30px;
+} 
+.specialities{
+    overflow: hidden;
+    justify-content:space-around;
+    display:flex;
+    margin-bottom:20px;
+    margin-top:30px;
+} 
+
+
+
+.fullmenu th {
+    text-align:left;
+    color:#9393fd;
+    font-size:1.25em;
+    padding-bottom:10px;
+} 
+
+.fullmenu dt {
+    text-align:left;
+    color:#6bb3fa;
+    font-size:1em;
+    padding-bottom:10px;
+    padding-top: 20px;
+}
+
+
+table {
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+td {
+    width:40%;
+    padding:5px;
+    padding-right:25px;
+    vertical-align:top;
+}
+
+#drink td {
+    width:33%;
+    padding:5px;
+    padding-right:5px;
+    vertical-align:top;
+    padding-bottom:50px; 
+}
+
+footer{
+    position:absolute;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #D66DBC;
+    font-weight: bold;
+    pointer-events: none;
+    }

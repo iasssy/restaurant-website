@@ -1,0 +1,163 @@
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Lato, sans-serif;
+    margin: 0 auto;
+}
+
+.pic {
+    width: 100%;
+}
+.pic img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.pic h2 {
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:rgb(255, 255, 255);
+    background-color: #f97df596;
+   font-family: Lato, sans-serif;
+    font-size:1.8em;
+    width:500px; 
+    text-align:center;
+    padding:4%;
+  }
+
+
+.container-centered {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:white;
+    text-align: center;
+    z-index:1;
+}
+
+nav li {
+    display: inline;
+    float: left;
+   
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #D66DBC;
+    
+}
+
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover{
+    background-color: #a982ef;
+}
+
+
+.columnl {
+    float: left;
+    width: 30%;
+    margin-left:5%;
+    margin-right:2%;
+}
+  
+.columnr {
+    float: right;
+    width: 40%;
+    margin-right:5%
+} 
+
+.row {
+    display: flex;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+
+div h3{
+   color:rgb(135, 135, 240);;
+   margin-top:0px;
+   font-family: Lato, sans-serif;
+   font-size:2em;
+}
+
+div p{
+    color:rgb(96, 96, 234);;
+    margin-top:30px;
+    font-family: Lato, sans-serif;
+    font-size:1em;
+ }
+
+article {
+    background-color:hsla(302, 100%, 88%, 0.644);
+    margin-bottom: 20px;
+    font-family: Lato, sans-serif;
+    font-size:1em;
+    height: 320px;
+    margin-top:50px;
+    width:100%;
+    text-align: center;
+    padding:30px;
+    border-style:double;
+    border-color: rgb(135, 135, 240); }
+
+
+article table{
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff8a;
+}
+
+
+ iframe {
+    width:100%;
+    height:200px;
+}
+
+
+footer{
+    position:absolute;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #D66DBC;
+    font-weight: bold;
+    pointer-events: none;
+    }
